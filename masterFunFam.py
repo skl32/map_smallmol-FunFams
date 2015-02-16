@@ -89,7 +89,7 @@ def getFunFams(targets, cathconfig, config):
     for target in targets:
         querytarget = "'" + target +"'"
         domains = []
-        query = """select u.sequence_md5, u.uniprot_acc, ff.superfamily_id, ff.funfam_number from CATH_V4_0_0.funfam_member ff, CATH_V4_0_0.CATHHMM_TO_MDA mda, CATH_V4_0_0.UNIPROT_DESCRIPTION u where ff.sequence_md5 = u.sequence_md5 and u.sequence_md5 = mda.id and u.uniprot_acc = %s """ %(querytarget)
+        query = """select u.sequence_md5, u.uniprot_acc, ff.superfamily_id, ff.funfam_number from CATH_DATA.funfam_member ff, CATH_DATA.CATHHMM_TO_MDA mda, CATH_DATA.UNIPROT_DESCRIPTION u where ff.sequence_md5 = u.sequence_md5 and u.sequence_md5 = mda.id and u.uniprot_acc = %s """ %(querytarget)
         for row in sql_query(query,cathconfig).fetchall():
             md5 = row[0]
             domain = str(row[2]) + "_" + str(row[3])
