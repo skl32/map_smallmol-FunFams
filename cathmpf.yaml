@@ -1,0 +1,5 @@
+--- # Params
+username: biomap_reader
+pword: 4biomapuse
+host: sinatra
+sid: biomapwh

@@ -1,0 +1,7 @@
+--- # Params
+user: root
+pword: r00t
+host: localhost
+port: 3306
+threshold: 5
+release: chembl_19
