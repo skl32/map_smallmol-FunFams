@@ -2,7 +2,7 @@
 Piece of Python code for the code review meeting.
 
 ## What the code does
-This code is adapted from the work of Felix Kruger at ChEMBL with mapping small molecules to Pfam domains. 
+This code is adapted from the work by Felix Kruger at ChEMBL with mapping small molecules to Pfam domains. 
 I've tweaked his code to make it work with FunFams instaed of Pfam domains.
 
 ## Requirements
